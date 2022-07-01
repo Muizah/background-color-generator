@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --sm: 12px;
+  --lg: 24px;
+  --bg: #fff;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--bg);
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation: body-animate 1s cubic-bezier(0.19, 1, 0.22, 1) 0.1s infinite; */
+}
+/* @keyframes body-animate {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sm);
+}
+
+button {
+  padding: var(--sm) var(--lg);
+  border-radius: var(--sm);
+  background-color: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  border: 2px solid black;
+  width: fit-content;
+  font-size: var(--lg);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lg);
+  align-items: center;
+  justify-content: center;
+}
+
+#hex_no {
+  text-transform: uppercase;
+}
