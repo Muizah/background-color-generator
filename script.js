@@ -18,3 +18,4 @@ function generateRandomNumber(min, max) {
 }
 generateCode();
 btn.addEventListener("click", generateCode);
+// Promises
